@@ -1,0 +1,188 @@
+#splash {
+    max-width: 95%;
+    margin-left: 10px;
+}
+
+h1 {    
+    font-size: 8vw;
+    color: hsl(48, 25%, 69%);
+    text-shadow: 0px 0px 2px #000000
+    , 0px 0px 2px #000000
+    , 0px 0px 10px #3f8c5e
+    , 0px 0px 10px #3f8c5e
+    , 0px 0px 10px #3f8c5e;
+    position: relative;
+    margin-top: -50%;
+    margin-left: 25%; 
+    
+}
+
+body {
+    background-color: hsl(48, 25%, 69%);
+}
+
+nav {
+    background-color: #13201d;
+    border-radius: 5px;
+    margin-left: 10px;
+    width: 150px;    
+}
+
+ul {
+    
+    padding: 10px;
+}
+
+a {
+    font-size: 20px;
+    color: hsl(48, 25%, 69%);
+    text-shadow: 0px 0px 2px #000000
+    , 0px 0px 2px #000000
+    , 0px 0px 10px #3f8c5e
+    , 0px 0px 10px #3f8c5e
+    , 0px 0px 10px #3f8c5e;
+}
+
+main {
+    display: grid;
+    width: 95vw;
+    height: 250px;
+    grid-template-areas:
+        "image1 image2 image3 image4 image5 image6 image7 image8 image9 image10 image11"
+        "image12 image13 image14 image15 image16 image17 image18 image19 image20 image21 image22";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 2em;
+}
+
+#abrams {
+    max-width: 100%;
+    height: auto;
+    grid-area: image1;   
+}
+
+#bebop {
+    max-width: 100%;
+    height: auto;   
+    grid-area: image2;    
+}
+
+#dynamo {
+    max-width: 100%;
+    height: auto;
+    grid-area: image3;    
+}
+
+#grey_talon {
+    max-width: 100%;
+    height: auto;
+    grid-area: image4;    
+}
+
+#haze {
+    max-width: 100%;
+    height: auto;
+    grid-area: image5;    
+}
+
+#infernus {
+    max-width: 100%;
+    height: auto;
+    grid-area: image6;    
+}
+
+#ivy {
+    max-width: 100%;
+    height: auto;
+    grid-area: image7;    
+}
+
+#kelvin {
+    max-width: 100%;
+    height: auto;
+    grid-area: image8;    
+}
+
+#lady_geist {
+    max-width: 100%;
+    height: auto;
+    grid-area: image9;    
+}
+
+#lash {
+    max-width: 100%;
+    height: auto;
+    grid-area: image10;    
+}
+
+#mcginnis {
+    max-width: 100%;
+    height: auto;
+    grid-area: image11;    
+}
+
+#mirage {
+    max-width: 100%;
+    height: auto;
+    grid-area: image12;    
+}
+
+#mo_krill {
+    max-width: 100%;
+    height: auto;
+    grid-area: image13;    
+}
+
+#paradox {
+    max-width: 100%;
+    height: auto;
+    grid-area: image14;    
+}
+
+#pocket {
+    max-width: 100%;
+    height: auto;
+    grid-area: image15;    
+}
+
+#seven {
+    max-width: 100%;
+    height: auto;
+    grid-area: image16;    
+}
+
+#shiv {
+    max-width: 100%;
+    height: auto;
+    grid-area: image17;    
+}
+
+#vindicta {
+    max-width: 100%;
+    height: auto;
+    grid-area: image18;    
+}
+
+#viscous{
+    max-width: 100%;
+    height: auto;
+    grid-area: image19;    
+}
+
+#wardon{
+    max-width: 100%;
+    height: auto;
+    grid-area: image20;    
+}
+
+#wraith{
+    max-width: 100%;
+    height: auto;
+    grid-area: image21;    
+}
+
+#yamato{
+    max-width: 100%;
+    height: auto;
+    grid-area: image22;    
+}
