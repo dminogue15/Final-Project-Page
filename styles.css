@@ -17,8 +17,40 @@ h1 {
     
 }
 
+p  {
+    color: hsl(48, 25%, 69%) ;
+    font-weight:bold;
+    font-size: 30;
+    padding: 10px;
+    background-color: #2f2f2f;
+    border-radius: 10px;
+}
+
+section {
+    display:block;
+    position:absolute;
+    margin-left:auto;
+    margin-right:auto;
+    padding-left: 300px;
+    padding-right: 10%;
+    max-width: 800px;
+    
+}
+
+@media (max-width: 800px) {
+    section {
+        position:static;
+        padding-left: 0px;
+    }
+    p {
+        font-size: 20;
+    }
+}
+
 body {
+    display:block;
     background-color: hsl(48, 25%, 69%);
+    
 }
 
 nav {
@@ -44,145 +76,561 @@ a {
 }
 
 main {
+    background-color: #2f2f2f;
+    border-radius: 10px;
+    padding: 10px;
     display: grid;
+    margin:auto;
     width: 95vw;
-    height: 250px;
+    height: auto;
     grid-template-areas:
         "image1 image2 image3 image4 image5 image6 image7 image8 image9 image10 image11"
         "image12 image13 image14 image15 image16 image17 image18 image19 image20 image21 image22";
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     column-gap: 2em;
+    row-gap: 2em;
+}
+
+@media (min-width: 800px) and (max-width: 1800px) {
+    main {
+    display: grid;
+    margin:auto;
+    width: 95vw;
+    height: auto;
+    grid-template-areas:
+        "image1 image2 image3 image4"
+        "image5 image6 image7 image8" 
+        "image9 image10 image11 image12"
+        "image13 image14 image15 image16" 
+        "image17 image18 image19 image20"; 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 2em;}
+}
+
+@media (max-width: 800px) {
+    main {
+    display: grid;
+    margin:auto;
+    width: 60vw;
+    height: auto;
+    grid-template-areas:
+        "image1 image2"
+        "image3 image4"
+        "image5 image6" 
+        "image7 image8" 
+        "image9 image10" 
+        "image11 image12"
+        "image13 image14" 
+        "image15 image16" 
+        "image17 image18" 
+        "image19 image20" 
+        "image21 image22";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 2em;}
 }
 
 #abrams {
-    max-width: 100%;
+    transition: .5s;
+    background-color: hsl(48, 25%, 69%);
+    padding: 5px;
+    border-radius: 5%;
+    max-width: 90%;
     height: auto;
     grid-area: image1;   
 }
+#abrams:hover {
+    transition: .5s;
+    background-color: hsl(48, 25%, 69%);
+    box-shadow: 0px 0px 10px #3f8c5e;
+    box-shadow: 0px 0px 10px #3f8c5e;
+    box-shadow: 0px 0px 10px #3f8c5e;
+    padding: 8px;
+    border-radius: 5%;
+    max-width: 95%;
+    height: auto;
+    grid-area: image1;
+}
 
 #bebop {
-    max-width: 100%;
+    transition: .5s;
+    background-color: hsl(48, 25%, 69%);
+    padding: 5px;
+    border-radius: 5%;
+    max-width: 90%;
     height: auto;   
     grid-area: image2;    
 }
+#bebop:hover {
+    transition: .5s;
+    background-color: hsl(48, 25%, 69%);
+    box-shadow: 0px 0px 10px #3f8c5e;
+    box-shadow: 0px 0px 10px #3f8c5e;
+    box-shadow: 0px 0px 10px #3f8c5e;
+    padding: 8px;
+    border-radius: 5%;
+    max-width: 95%;
+    height: auto;
+    grid-area: image1;
+}
 
 #dynamo {
-    max-width: 100%;
+    transition: .5s;
+    background-color: hsl(48, 25%, 69%);
+    padding: 5px;
+    border-radius: 5%;
+    max-width: 90%;
     height: auto;
     grid-area: image3;    
 }
 
+#dynamo:hover {
+    transition: .5s;
+    background-color: hsl(48, 25%, 69%);
+    box-shadow: 0px 0px 10px #3f8c5e;
+    box-shadow: 0px 0px 10px #3f8c5e;
+    box-shadow: 0px 0px 10px #3f8c5e;
+    padding: 8px;
+    border-radius: 5%;
+    max-width: 95%;
+    height: auto;
+    grid-area: image1;
+}
+
 #grey_talon {
-    max-width: 100%;
+    transition: .5s;
+    background-color: hsl(48, 25%, 69%);
+    padding: 5px;
+    border-radius: 5%;
+    max-width: 90%;
     height: auto;
     grid-area: image4;    
 }
+#grey_talon:hover {
+    transition: .5s;
+    background-color: hsl(48, 25%, 69%);
+    box-shadow: 0px 0px 10px #3f8c5e;
+    box-shadow: 0px 0px 10px #3f8c5e;
+    box-shadow: 0px 0px 10px #3f8c5e;
+    padding: 8px;
+    border-radius: 5%;
+    max-width: 95%;
+    height: auto;
+    grid-area: image1;
+}
 
 #haze {
-    max-width: 100%;
+    transition: .5s;
+    background-color: hsl(48, 25%, 69%);
+    padding: 5px;
+    border-radius: 5%;
+    max-width: 90%;
     height: auto;
     grid-area: image5;    
 }
 
+#haze:hover {
+    transition: .5s;
+    background-color: hsl(48, 25%, 69%);
+    box-shadow: 0px 0px 10px #3f8c5e;
+    box-shadow: 0px 0px 10px #3f8c5e;
+    box-shadow: 0px 0px 10px #3f8c5e;
+    padding: 8px;
+    border-radius: 5%;
+    max-width: 95%;
+    height: auto;
+    grid-area: image1;
+}
+
 #infernus {
-    max-width: 100%;
+    transition: .5s;
+    background-color: hsl(48, 25%, 69%);
+    padding: 5px;
+    border-radius: 5%;
+    max-width: 90%;
     height: auto;
     grid-area: image6;    
 }
 
+#infernus:hover {
+    transition: .5s;
+    background-color: hsl(48, 25%, 69%);
+    box-shadow: 0px 0px 10px #3f8c5e;
+    box-shadow: 0px 0px 10px #3f8c5e;
+    box-shadow: 0px 0px 10px #3f8c5e;
+    padding: 8px;
+    border-radius: 5%;
+    max-width: 95%;
+    height: auto;
+    grid-area: image1;
+}
+
 #ivy {
-    max-width: 100%;
+    transition: .5s;
+    background-color: hsl(48, 25%, 69%);
+    padding: 5px;
+    border-radius: 5%;
+    max-width: 90%;
     height: auto;
     grid-area: image7;    
 }
 
+#ivy:hover {
+    transition: .5s;
+    background-color: hsl(48, 25%, 69%);
+    box-shadow: 0px 0px 10px #3f8c5e;
+    box-shadow: 0px 0px 10px #3f8c5e;
+    box-shadow: 0px 0px 10px #3f8c5e;
+    padding: 8px;
+    border-radius: 5%;
+    max-width: 95%;
+    height: auto;
+    grid-area: image1;
+}
+
 #kelvin {
-    max-width: 100%;
+    transition: .5s;
+    background-color: hsl(48, 25%, 69%);
+    padding: 5px;
+    border-radius: 5%;
+    max-width: 90%;
     height: auto;
     grid-area: image8;    
 }
 
+#kelvin:hover {
+    transition: .5s;
+    background-color: hsl(48, 25%, 69%);
+    box-shadow: 0px 0px 10px #3f8c5e;
+    box-shadow: 0px 0px 10px #3f8c5e;
+    box-shadow: 0px 0px 10px #3f8c5e;
+    padding: 8px;
+    border-radius: 5%;
+    max-width: 95%;
+    height: auto;
+    grid-area: image1;
+}
+
 #lady_geist {
-    max-width: 100%;
+    transition: .5s;
+    background-color: hsl(48, 25%, 69%);
+    padding: 5px;
+    border-radius: 5%;
+    max-width: 90%;
     height: auto;
     grid-area: image9;    
 }
 
+#lady_geist:hover {
+    transition: .5s;
+    background-color: hsl(48, 25%, 69%);
+    box-shadow: 0px 0px 10px #3f8c5e;
+    box-shadow: 0px 0px 10px #3f8c5e;
+    box-shadow: 0px 0px 10px #3f8c5e;
+    padding: 8px;
+    border-radius: 5%;
+    max-width: 95%;
+    height: auto;
+    grid-area: image1;
+}
+
 #lash {
-    max-width: 100%;
+    transition: .5s;
+    background-color: hsl(48, 25%, 69%);
+    padding: 5px;
+    border-radius: 5%;
+    max-width: 90%;
     height: auto;
     grid-area: image10;    
 }
 
+#lash:hover {
+    transition: .5s;
+    background-color: hsl(48, 25%, 69%);
+    box-shadow: 0px 0px 10px #3f8c5e;
+    box-shadow: 0px 0px 10px #3f8c5e;
+    box-shadow: 0px 0px 10px #3f8c5e;
+    padding: 8px;
+    border-radius: 5%;
+    max-width: 95%;
+    height: auto;
+    grid-area: image1;
+}
+
 #mcginnis {
-    max-width: 100%;
+    transition: .5s;
+    background-color: hsl(48, 25%, 69%);
+    padding: 5px;
+    border-radius: 5%;
+    max-width: 90%;
     height: auto;
     grid-area: image11;    
 }
 
+#mcginnis:hover {
+    transition: .5s;
+    background-color: hsl(48, 25%, 69%);
+    box-shadow: 0px 0px 10px #3f8c5e;
+    box-shadow: 0px 0px 10px #3f8c5e;
+    box-shadow: 0px 0px 10px #3f8c5e;
+    padding: 8px;
+    border-radius: 5%;
+    max-width: 95%;
+    height: auto;
+    grid-area: image1;
+}
+
 #mirage {
-    max-width: 100%;
+    transition: .5s;
+    background-color: hsl(48, 25%, 69%);
+    padding: 5px;
+    border-radius: 5%;
+    max-width: 90%;
     height: auto;
     grid-area: image12;    
 }
 
+#mirage:hover {
+    transition: .5s;
+    background-color: hsl(48, 25%, 69%);
+    box-shadow: 0px 0px 10px #3f8c5e;
+    box-shadow: 0px 0px 10px #3f8c5e;
+    box-shadow: 0px 0px 10px #3f8c5e;
+    padding: 8px;
+    border-radius: 5%;
+    max-width: 95%;
+    height: auto;
+    grid-area: image1;
+}
+
 #mo_krill {
-    max-width: 100%;
+    transition: .5s;
+    background-color: hsl(48, 25%, 69%);
+    padding: 5px;
+    border-radius: 5%;
+    max-width: 90%;
     height: auto;
     grid-area: image13;    
 }
 
+#mo_krill:hover {
+    transition: .5s;
+    background-color: hsl(48, 25%, 69%);
+    box-shadow: 0px 0px 10px #3f8c5e;
+    box-shadow: 0px 0px 10px #3f8c5e;
+    box-shadow: 0px 0px 10px #3f8c5e;
+    padding: 8px;
+    border-radius: 5%;
+    max-width: 95%;
+    height: auto;
+    grid-area: image1;
+}
+
 #paradox {
-    max-width: 100%;
+    transition: .5s;
+    background-color: hsl(48, 25%, 69%);
+    padding: 5px;
+    border-radius: 5%;
+    max-width: 90%;
     height: auto;
     grid-area: image14;    
 }
 
+#paradox:hover {
+    transition: .5s;
+    background-color: hsl(48, 25%, 69%);
+    box-shadow: 0px 0px 10px #3f8c5e;
+    box-shadow: 0px 0px 10px #3f8c5e;
+    box-shadow: 0px 0px 10px #3f8c5e;
+    padding: 8px;
+    border-radius: 5%;
+    max-width: 95%;
+    height: auto;
+    grid-area: image1;
+}
+
 #pocket {
-    max-width: 100%;
+    transition: .5s;
+    background-color: hsl(48, 25%, 69%);
+    padding: 5px;
+    border-radius: 5%;
+    max-width: 90%;
     height: auto;
     grid-area: image15;    
 }
 
+#pocket:hover {
+    transition: .5s;
+    background-color: hsl(48, 25%, 69%);
+    box-shadow: 0px 0px 10px #3f8c5e;
+    box-shadow: 0px 0px 10px #3f8c5e;
+    box-shadow: 0px 0px 10px #3f8c5e;
+    padding: 8px;
+    border-radius: 5%;
+    max-width: 95%;
+    height: auto;
+    grid-area: image1;
+}
+
 #seven {
-    max-width: 100%;
+    transition: .5s;
+    background-color: hsl(48, 25%, 69%);
+    padding: 5px;
+    border-radius: 5%;
+    max-width: 90%;
     height: auto;
     grid-area: image16;    
 }
 
+#seven:hover {
+    transition: .5s;
+    background-color: hsl(48, 25%, 69%);
+    box-shadow: 0px 0px 10px #3f8c5e;
+    box-shadow: 0px 0px 10px #3f8c5e;
+    box-shadow: 0px 0px 10px #3f8c5e;
+    padding: 8px;
+    border-radius: 5%;
+    max-width: 95%;
+    height: auto;
+    grid-area: image1;
+}
+
 #shiv {
-    max-width: 100%;
+    transition: .5s;
+    background-color: hsl(48, 25%, 69%);
+    padding: 5px;
+    border-radius: 5%;
+    max-width: 90%;
     height: auto;
     grid-area: image17;    
 }
 
+#shiv:hover {
+    transition: .5s;
+    background-color: hsl(48, 25%, 69%);
+    box-shadow: 0px 0px 10px #3f8c5e;
+    box-shadow: 0px 0px 10px #3f8c5e;
+    box-shadow: 0px 0px 10px #3f8c5e;
+    padding: 8px;
+    border-radius: 5%;
+    max-width: 95%;
+    height: auto;
+    grid-area: image1;
+}
+
 #vindicta {
-    max-width: 100%;
+    transition: .5s;
+    background-color: hsl(48, 25%, 69%);
+    padding: 5px;
+    border-radius: 5%;
+    max-width: 90%;
     height: auto;
     grid-area: image18;    
 }
 
+#vindicta:hover {
+    transition: .5s;
+    background-color: hsl(48, 25%, 69%);
+    box-shadow: 0px 0px 10px #3f8c5e;
+    box-shadow: 0px 0px 10px #3f8c5e;
+    box-shadow: 0px 0px 10px #3f8c5e;
+    padding: 8px;
+    border-radius: 5%;
+    max-width: 95%;
+    height: auto;
+    grid-area: image1;
+}
+
 #viscous{
-    max-width: 100%;
+    transition: .5s;
+    background-color: hsl(48, 25%, 69%);
+    padding: 5px;
+    border-radius: 5%;
+    max-width: 90%;
     height: auto;
     grid-area: image19;    
 }
 
+#viscous:hover {
+    transition: .5s;
+    background-color: hsl(48, 25%, 69%);
+    box-shadow: 0px 0px 10px #3f8c5e;
+    box-shadow: 0px 0px 10px #3f8c5e;
+    box-shadow: 0px 0px 10px #3f8c5e;
+    padding: 8px;
+    border-radius: 5%;
+    max-width: 95%;
+    height: auto;
+    grid-area: image1;
+}
+
 #wardon{
-    max-width: 100%;
+    transition: .5s;
+    background-color: hsl(48, 25%, 69%);
+    padding: 5px;
+    border-radius: 5%;
+    max-width: 90%;
     height: auto;
     grid-area: image20;    
 }
 
+#wardon:hover {
+    transition: .5s;
+    background-color: hsl(48, 25%, 69%);
+    box-shadow: 0px 0px 10px #3f8c5e;
+    box-shadow: 0px 0px 10px #3f8c5e;
+    box-shadow: 0px 0px 10px #3f8c5e;
+    padding: 8px;
+    border-radius: 5%;
+    max-width: 95%;
+    height: auto;
+    grid-area: image1;
+}
+
 #wraith{
-    max-width: 100%;
+
+    transition: .5s;
+    background-color: hsl(48, 25%, 69%);
+    padding: 5px;
+    border-radius: 5%;
+    max-width: 90%;
     height: auto;
     grid-area: image21;    
 }
 
+#wraith:hover {
+    transition: .5s;
+    background-color: hsl(48, 25%, 69%);
+    box-shadow: 0px 0px 10px #3f8c5e;
+    box-shadow: 0px 0px 10px #3f8c5e;
+    box-shadow: 0px 0px 10px #3f8c5e;
+    padding: 8px;
+    border-radius: 5%;
+    max-width: 95%;
+    height: auto;
+    grid-area: image1;
+}
+
 #yamato{
-    max-width: 100%;
+    transition: .5s;
+    background-color: hsl(48, 25%, 69%);
+    padding: 5px;
+    border-radius: 5%;
+    max-width: 90%;
     height: auto;
     grid-area: image22;    
+}
+#yamato:hover {
+    transition: .5s;
+    background-color: hsl(48, 25%, 69%);
+    box-shadow: 0px 0px 10px #3f8c5e;
+    box-shadow: 0px 0px 10px #3f8c5e;
+    box-shadow: 0px 0px 10px #3f8c5e;
+    padding: 8px;
+    border-radius: 5%;
+    max-width: 95%;
+    height: auto;
+    grid-area: image1;
 }
